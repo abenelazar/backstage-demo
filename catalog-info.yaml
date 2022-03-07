@@ -1,23 +1,23 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: backstage
-  description: |
-    Backstage is an open-source developer portal that puts the developer experience first.
-  links:
-    - title: Website
-      url: http://backstage.io
-    - title: Documentation
-      url: https://backstage.io/docs
-    - title: Storybook
-      url: https://backstage.io/storybook
-    - title: Discord Chat
-      url: https://discord.com/invite/EBHEGzX
+  description: Backstage Developer Portal
+  title: Backstage
   annotations:
-    github.com/project-slug: backstage/backstage
-    backstage.io/techdocs-ref: dir:.
-    lighthouse.com/website-url: https://backstage.io
+    github.com/project-slug: aetna-digital-infrastructure/poc-backstage
+    circleci.com/project-slug: github/aetna-digital-infrastructure/poc-backstage
+  tags:
+    - kubernetes
+    - gke
+  links:
+    - url: https://cvsdigital.atlassian.net/wiki/spaces/FP/pages/2178678797/How+to+access+CVS+Digital+Backstage+from+Laptop
+      title: How to access
+    - url: https://cvsdigital.atlassian.net/wiki/spaces/FP/pages/312870243/Upgrade+of+Backstage
+      title: How to upgrade
 spec:
-  type: library
-  owner: CNCF
-  lifecycle: experimental
+  type: developer-portal
+  lifecycle: production
+  owner: inception
+  system: developer.portal
